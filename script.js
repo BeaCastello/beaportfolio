@@ -331,27 +331,26 @@ const slides = document.querySelectorAll('.slide');
 
 function acceptCookies() {
     
-    localStorage.setItem('cookiesAccepted', 'true');
-
-    
+    localStorage.setItem('cookiesAccepted', 'true');    
     document.getElementById('cookieBanner').style.display = 'none';
-    document.getElementById('mainContent').style.display = 'block';
-}
+    }
 
-function closePage() {
-  window.close();
+function rejectCookies() {
+    localStorage.setItem('cookiesAccepted', 'false');
+    // Redirige a otra página o muestra un mensaje de acceso denegado
+    window.location.href = "https://www.google.com"; // O una página interna como "acceso_denegado.html"
 }
-
 
 window.onload = function () {
-    if (localStorage.getItem('cookiesAccepted') === 'true') {
+    const accepted = localStorage.getItem('cookiesAccepted');
+
+    if (accepted === 'true') {
         document.getElementById('cookieBanner').style.display = 'none';
-        
+        document.getElementById('mainContent').style.display = 'block';
+    } else if (accepted === 'false') {
+       
+        window.location.href = "https://www.google.com";
     } else {
         document.getElementById('cookieBanner').style.display = 'block';
-        
     }
 }
-
-
-
