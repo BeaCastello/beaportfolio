@@ -211,7 +211,7 @@ const experiencias = [
     links: [
       "https://beacastello.github.io/proyectoLaura/",
       "https://beacastello.github.io/digitalHive/",
-      "https://beacastello.github.io/portafoliobea/"
+      "https://portafoliobea.com/"
     ],
     descripcion: "Creación de páginas web para la publicidad de servicios.",
     descripcion_en: "Creation of web pages for advertising services."
