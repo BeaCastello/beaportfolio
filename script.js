@@ -327,21 +327,22 @@ const slides = document.querySelectorAll('.slide');
     updateSlider(currentIndex);
   });
 
+// Cookies
 
 function acceptCookies() {
-    // Guardar en localStorage que el usuario aceptó cookies
+    
     localStorage.setItem('cookiesAccepted', 'true');
 
-    // Ocultar el banner y mostrar el contenido principal
+    
     document.getElementById('cookieBanner').style.display = 'none';
     document.getElementById('mainContent').style.display = 'block';
 }
 
 function closePage() {
-    window.close();
+  window.close();
 }
 
-// Verificar al cargar la página si ya aceptó cookies
+
 window.onload = function () {
     if (localStorage.getItem('cookiesAccepted') === 'true') {
         document.getElementById('cookieBanner').style.display = 'none';
