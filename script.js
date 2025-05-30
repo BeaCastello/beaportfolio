@@ -337,8 +337,8 @@ function acceptCookies() {
 
 function rejectCookies() {
     localStorage.setItem('cookiesAccepted', 'false');
-    // Redirige a otra página o muestra un mensaje de acceso denegado
-    window.location.href = "https://www.google.com"; // O una página interna como "acceso_denegado.html"
+    
+    window.location.href = "https://portafoliobea.com"; 
 }
 
 window.onload = function () {
@@ -349,7 +349,7 @@ window.onload = function () {
         document.getElementById('mainContent').style.display = 'block';
     } else if (accepted === 'false') {
        
-        window.location.href = "https://www.google.com";
+        window.location.href = "https://portafoliobea.com";
     } else {
         document.getElementById('cookieBanner').style.display = 'block';
     }
