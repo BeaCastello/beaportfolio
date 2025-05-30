@@ -788,7 +788,7 @@ h2 {
 .habilidades {
   text-align: center;
   background: #f9f9f9;
-}
+  }
 
 .habilidades h2 {
   font-size: 2em;
@@ -801,6 +801,7 @@ h2 {
   flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
+  padding: 0px 200px 0px 200px;
 }
 
 .tarjeta {
@@ -835,6 +836,11 @@ h2 {
 
 .tarjeta:hover img {
   transform: scale(1.1) rotate(3deg);
+}
+@media (max-width: 768px){
+  .contenedor-habilidades{
+    padding: 0px;
+  }
 }
 
 /*  Contact */
