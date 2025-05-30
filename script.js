@@ -329,28 +329,24 @@ const slides = document.querySelectorAll('.slide');
 
 // Cookies
 
-function acceptCookies() {
-    
-    localStorage.setItem('cookiesAccepted', 'true');    
-    document.getElementById('cookieBanner').style.display = 'none';
-    }
 
-function rejectCookies() {
-    localStorage.setItem('cookiesAccepted', 'false');
-    
-    window.location.href = "https://portafoliobea.com"; 
-}
-
-window.onload = function () {
-    const accepted = localStorage.getItem('cookiesAccepted');
-
-    if (accepted === 'true') {
+    function acceptCookies() {
+        localStorage.setItem('cookiesAccepted', 'true');
         document.getElementById('cookieBanner').style.display = 'none';
-        document.getElementById('mainContent').style.display = 'block';
-    } else if (accepted === 'false') {
-       
-        window.location.href = "https://portafoliobea.com";
-    } else {
-        document.getElementById('cookieBanner').style.display = 'block';
+        
     }
-}
+
+    function rejectCookies() {
+               alert("No se puede acceder al contenido si no aceptas las cookies.");
+    }
+
+    window.onload = function () {
+        const consent = localStorage.getItem('cookiesAccepted');
+        if (consent === 'true') {
+            document.getElementById('cookieBanner').style.display = 'none';
+           
+        } else {
+            document.getElementById('cookieBanner').style.display = 'block';
+            
+        }
+    }
