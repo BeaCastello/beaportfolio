@@ -209,7 +209,7 @@ const experiencias = [
       "imagenes/paginaweb2.png"
     ],
     links: [
-      "https://beacastello.github.io/proyectoLaura/",
+      "https://beacastello.github.io/papeleosenlasredes/",
       "https://beacastello.github.io/digitalHive/",
       "https://portafoliobea.com/"
     ],
