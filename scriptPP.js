@@ -9,10 +9,9 @@ acceptBtn.addEventListener('click', () => {
 
 });
 
-
 rejectBtn.addEventListener('click', () => {
     localStorage.setItem('consentGiven', 'false');
-    window.location.href = 'https://www.google.com'; 
+   alert("No se puede acceder al contenido si no aceptas las cookies.");
 });
 
 
@@ -22,7 +21,7 @@ window.onload = () => {
         consentBox.style.display = 'none';
 
     } else if (consent === 'false') {
-        window.location.href = 'https://www.google.com';
+         alert("No se puede acceder al contenido si no aceptas las cookies.");
     } else {
         consentBox.style.display = 'block';
     }
