@@ -149,7 +149,7 @@ langMenu.querySelectorAll("li").forEach((li) => {
     
     cambiarIdioma(currentLang);
     cambiarIdiomaBoton(currentLang);
-    cambiarIdiomaHabilidades(currentLang);
+  
   });
 });
 
