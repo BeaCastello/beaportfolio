@@ -520,6 +520,24 @@ a {
   }
 }
 
+@media (max-width: 480px) {
+  .training-left {
+    flex-direction: column;    
+    margin-left: 0px;
+  }
+
+  .photo1 {
+    margin-top: 40px;
+    width: 70%;
+  }
+
+  .photo2 {
+    margin: 0px;
+    margin-top: 40px;
+    width: 70%;
+  }
+}
+
 /* Work Experience */
 
 h2 {
@@ -849,7 +867,7 @@ h2 {
   display: flex;
   justify-content: left;
   align-items: center;
-  background-image: url('imagenes/contacto.png');
+  background-image: url('imagenes/fondoContacto1.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1163,7 +1181,6 @@ textarea {
 }
 
 .cookie-banner p {
-  flex: 1 1 300px;
   margin-left: 25px;
   margin-right: 20px;
   text-align: justify;
@@ -1195,8 +1212,7 @@ textarea {
 .cookie-content {
   color: black;
   border-radius: 16px;
-  max-width: 500px;
-  height: 80%;
+  max-width: 500px;  
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
   overflow-y: auto;
   background-color: #f7ddccc9;
@@ -1260,18 +1276,22 @@ main {
 
 @media (max-width: 468px) {
   .cookie-content {
-    text-align: left;   
-    padding-bottom: 40px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    justify-self: center;
-    margin-top: 40px
+    width: 300px;
+    margin: 0px;
+
   }
 
   .cookie-content p {
     margin-top: 5px;
     margin-left: 0px;
     margin-right: 0px;
+    font-size: 1rem;
+
+  }
+
+  .cookie-banner p {
+    flex: 0px;
   }
 }
